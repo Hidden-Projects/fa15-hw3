@@ -1,0 +1,38 @@
+<h1>Current Database Information:</h1>
+
+<h2>Users</h2>
+<table border="1">
+    <% @users.each do |user| %>
+    <tr>
+        <td><%= user.id         %></td>
+        <td><%= user.username   %></td>
+        <td><%= user.email      %></td>
+        <td><%= user.created_at %></td>
+        <td><%= user.updated_at %></td>
+        <td><%= user.age        %></td>
+    </tr>
+    <% end %>
+</table>
+
+<h2>Cats</h2>
+<table border="1">
+    <% @cats.each do |cat| %>
+    <tr>
+        <td><%= cat.id    %></td>
+        <td><%= cat.name  %></td>
+    </tr>
+    <% end %>
+</table>
+
+<h2>Todo</h2>
+<table border="1">
+    <% @todo.each do |todo| %>
+    <tr>
+        <td><%= todo.id         %></td>
+        <td><%= todo.tasks      %></td>
+        <td><%= todo.finished   %></td>
+        <td><%= todo.created_at %></td>
+        <td><%= todo.updated_at %></td>
+    </tr>
+    <% end %>
+</table>
